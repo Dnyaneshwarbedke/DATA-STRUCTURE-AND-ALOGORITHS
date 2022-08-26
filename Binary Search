@@ -1,0 +1,31 @@
+Binary Search
+Array Need to be Sorted;
+The time complexity of the binary search algorithm is O(log n).
+The Space complexity of the binary search algorithm is O(1).
+
+
+#####################################################        JAVA SOLUTION           #####################################################
+
+class Search{
+public static void BinarySearch(int arr[],int n,int k){
+    int low=0;
+    int high=n-1;
+    int mid=n/2;
+     while(low<=high){
+        if(arr[mid]==k){
+          System.out.println("Key is found at :"+k);
+          break;
+        }
+         if(arr[mid]<key){
+          low=mid+1;
+         }
+         if(arr[mid]>key){
+          high=mid-1;
+         }
+         if(low>high){
+          System.out.println("Key Not found :");
+         }
+        mid=(low+high)/2;
+      }
+    }
+}
